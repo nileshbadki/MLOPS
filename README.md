@@ -61,7 +61,7 @@ Commit the main.yaml file to your repository and push it to the main branch.
 
 Now, when you push changes to the main branch, GitHub Actions will automatically trigger the workflow, build the Docker image, and push it to Docker Hub
 
-#Cloud Deployment
+# Cloud Deployment
 
 To deploy a Dockerized machine learning model on the AWS cloud platform, you need to follow below steps,
 
