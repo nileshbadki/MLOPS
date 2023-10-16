@@ -99,4 +99,4 @@ The deployment group (with the codeDeployRole) manages how your Dockerized model
 
 URL: http://34.227.225.61/index.html/
 
-
+![Screenshot (612)](https://github.com/nileshbadki/MLOPS/assets/95561162/0f18c469-f55f-4a42-8595-935edd6bdaa7)
