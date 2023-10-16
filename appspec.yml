@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /templates
+  - source: /
     destination: /var/www/html/index.html
-  - source: /templates
-    destination: /var/www/result.html
+  - source: /
+    destination: /var/www/html/result.html
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
