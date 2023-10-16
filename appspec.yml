@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /index.html
-    destination: /var/www/html/
+    destination: /var/www/index.html/
   - source: /result.html
-    destination: /var/www/html/
+    destination: /var/www/result.html/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
