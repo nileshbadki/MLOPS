@@ -1,9 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source: /path/to/index.html
+  - source: /index.html
     destination: /var/www/html/index.html
-  - source: /path/to/result.html
+  - source: /result.html
     destination: /var/www/html/result.html
 hooks:
   BeforeInstall:
