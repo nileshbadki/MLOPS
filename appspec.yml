@@ -5,11 +5,18 @@ files:
     destination: /var/www/html/index.html
   - source: /result.html
     destination: /var/www/html/result.html
+permissions:
+  - object: /var/www/html
+    pattern: "**"
+    owner: ec2-user
+    group: www
+    mode: 755
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
       timeout: 300
       runas: root
+  AfterInstall:
     - location: scripts/start_server
       timeout: 300
       runas: root
