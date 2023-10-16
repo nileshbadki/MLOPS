@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /doc1
-    destination: /var/www/html/index.html
-  - source: /doc2
-    destination: /var/www/html/result.html
+  - source: /
+    destination: /var/www/doc1/index.html
+  - source: /
+    destination: /var/www/doc2/result.html
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
