@@ -1,9 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /doc1
     destination: /var/www/html/index.html
-  - source: /
+  - source: /doc2
     destination: /var/www/html/result.html
 hooks:
   BeforeInstall:
