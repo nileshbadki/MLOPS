@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/templates
+    destination: /var/www/html/CHURN_PREDICTION-MASTER
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
