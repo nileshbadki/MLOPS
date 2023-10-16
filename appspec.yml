@@ -3,9 +3,9 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html/index.html
-  - source: /result.html
+  - source: /
     destination: /var/www/html/result.html
-    
+
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
