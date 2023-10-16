@@ -4,7 +4,7 @@ files:
   - source: /templates
     destination: /var/www/html/index.html
   - source: /templates
-    destination: /var/www/html/result.html
+    destination: /var/www/result.html
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
