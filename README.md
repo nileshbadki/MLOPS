@@ -96,3 +96,7 @@ Deployment Process:
 
 Once the pipeline is created, it initiates the deployment process.
 The deployment group (with the codeDeployRole) manages how your Dockerized model is deployed on your EC2 instance.
+
+URL: http://34.227.225.61/index.html/
+
+
