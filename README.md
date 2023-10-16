@@ -60,3 +60,39 @@ Commit and Push:
 Commit the main.yaml file to your repository and push it to the main branch.
 
 Now, when you push changes to the main branch, GitHub Actions will automatically trigger the workflow, build the Docker image, and push it to Docker Hub
+
+#Cloud Deployment
+
+To deploy a Dockerized machine learning model on the AWS cloud platform, you need to follow below steps,
+
+Create IAM Roles:
+
+Begin by creating two IAM roles, one for your EC2 instance and another for CodeDeploy. These roles will provide the necessary permissions for your deployment process.
+
+EC2 Instance Role:
+
+The EC2 instance role should grant permissions to deploy code automatically.
+Attach this role to the EC2 instance where you plan to host your Dockerized model.
+CodeDeploy Role:
+
+The CodeDeploy role, known as codeDeployRole, will be used to manage deployments.
+Attach this role to your CodeDeploy application and deployment group.
+Create a CodeDeploy Application:
+
+In the CodeDeploy console, create a new application.
+This application will be the container for your deployments.
+Create a Deployment Group:
+
+Within the CodeDeploy application, create a deployment group.
+Assign the codeDeployRole you created earlier as the service role for this group.
+Create a Pipeline:
+
+Set up a CodePipeline to automate the deployment process.
+Begin by defining a source stage. Decide whether your source code will come from an S3 bucket or a GitHub repository.
+Configure Connection and Repository Access:
+
+For your chosen source (S3 or GitHub), create the necessary connections and provide access to the source repository.
+Deployment Process:
+
+Once the pipeline is created, it initiates the deployment process.
+The deployment group (with the codeDeployRole) manages how your Dockerized model is deployed on your EC2 instance.
